@@ -66,61 +66,110 @@ body {
   line-height: 1.3;
 }
 
-a {
-  color: #800000;
-}
-
 section {
   background-size: cover;
-  background-attachment: fixed;
   height: 100%;
   position: relative;
 }
 
-.one .text, .two .text, .three .text {
-  width: 30%;
-  min-width: 300px;
-  padding: 20px 32px;
-  border-radius: 8px;
-  color: white;
+.one .text, .two .text, .three .text, .four .text {
+  padding: 20px 20px;
   position: absolute;
-  -webkit-box-shadow: 0 0 120px rgba(255, 255, 255, 0.3);
-  -moz-box-shadow: 0 0 120px rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 120px rgba(255, 255, 255, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
-h2 {
-  font-size: 32px;
+h2, h1 {
+  font-size: 40px;
   font-weight: bold;
-  margin-bottom: .8em;
 }
 
 .one {
-  background-image: url(/img/cape.jpg);
+  background-image: url(/img/fozzie/Fozzie-pose.png);
 }
 .one .text {
-  background-color: rgba(20, 31, 36, 0.8);
-  bottom: 100px;
-  right: 100px;
+  width: 28%;
+  min-width: 300px;
+  color: #b75162;
+  top: 150px;
+  left: 60px;
+}
+.one .picture img {
+  display: none;
 }
 
 .two {
-  background-image: url(/img/crime.jpg);
+  background-image: url(/img/fozzie/musical_fozzie.jpg);
 }
 .two .text {
-  background-color: rgba(129, 143, 153, 0.8);
-  color: #00070F;
-  top: 100px;
-  left: 100px;
+  width: 40%;
+  min-width: 300px;
+  color: white;
+  top: 80px;
+  right: 50px;
+}
+.two .picture img {
+  display: none;
 }
 
 .three {
-  background-image: url(/img/west.jpg);
+  background-image: url(/img/fozzie/domestic_fozzie.png);
+  background-position: center center;
 }
 .three .text {
-  background-color: rgba(254, 222, 59, 0.8);
-  color: #141213;
-  bottom: 100px;
+  width: 30%;
+  min-width: 300px;
+  color: #532818;
+  top: 150px;
   left: 100px;
+}
+.three .picture img {
+  display: none;
+}
+
+.four {
+  background-image: url(/img/fozzie/fozzie_friends.jpg);
+}
+.four .text {
+  width: 40%;
+  color: white;
+  top: 10px;
+  right: 10px;
+}
+.four .picture img {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .one, .two, .three, .four {
+    background: none;
+  }
+  .one .picture img, .two .picture img, .three .picture img, .four .picture img {
+    position: absolute;
+    top: 150px;
+    display: block;
+    max-width: 600px;
+    min-width: 100px;
+    max-height: 400px;
+  }
+  .one .text, .two .text, .three .text, .four .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 10px 0 10px;
+  }
+  .one .text h2, .one .text h1, .two .text h2, .two .text h1, .three .text h2, .three .text h1, .four .text h2, .four .text h1 {
+    font-size: 28px;
+  }
+  .one .text p, .two .text p, .three .text p, .four .text p {
+    font-size: 18px;
+  }
+
+  .two .text {
+    color: black;
+    top: -150px;
+  }
+
+  .picture {
+    top: -150px;
+  }
 }
