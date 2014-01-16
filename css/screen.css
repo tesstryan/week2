@@ -139,63 +139,48 @@ h2, h1 {
 }
 
 @media screen and (max-width: 600px) {
+  section {
+    height: 76%;
+  }
+
   .one, .two, .three, .four {
     background: none;
   }
   .one .picture img, .two .picture img, .three .picture img, .four .picture img {
-    display: block;
+    position: relative;
+    display: inline-block;
     max-width: 600px;
     min-width: 100px;
-    max-height: 400px;
+    height: 400px;
   }
   .one .text, .two .text, .three .text, .four .text {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
+    text-align: center;
+    padding: 10px;
     width: 100%;
-    margin: 0 10px 0 10px;
   }
   .one .text h2, .one .text h1, .two .text h2, .two .text h1, .three .text h2, .three .text h1, .four .text h2, .four .text h1 {
-    font-size: 28px;
+    font-size: 22px;
   }
   .one .text p, .two .text p, .three .text p, .four .text p {
-    font-size: 18px;
-  }
-
-  .one .picture {
-    position: absolute;
-    top: 150px;
+    font-size: 14px;
   }
 
   .two .text {
     color: black;
-    position: absolute;
-    top: -150px;
-  }
-
-  .two .picture {
-    position: absolute;
-    top: 0px;
-  }
-
-  .three .text {
-    position: absolute;
-    top: -350px;
-  }
-
-  .three .picture {
-    position: absolute;
-    top: -200px;
   }
 
   .four .text {
-    position: absolute;
-    top: -500px;
     color: black;
   }
 
-  .four .picture {
-    position: absolute;
-    top: -370px;
+  .four {
+    max-height: 485px;
+  }
+
+  .three {
+    max-height: 485px;
   }
 }
