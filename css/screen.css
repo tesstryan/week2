@@ -82,6 +82,18 @@ h2, h1 {
   font-weight: bold;
 }
 
+.one .circle, .two .circle, .three .circle, .four .circle {
+  position: absolute;
+  bottom: 11px;
+  right: 11px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 100px;
+  text-align: center;
+}
+
 .one {
   background-image: url(/img/fozzie/Fozzie-pose.png);
 }
@@ -89,11 +101,19 @@ h2, h1 {
   width: 28%;
   min-width: 300px;
   color: #b75162;
-  top: 150px;
+  top: 100px;
   left: 60px;
 }
 .one .picture img {
   display: none;
+}
+.one .circle {
+  background-color: #b75162;
+}
+.one .circle i {
+  position: relative;
+  bottom: 25px;
+  color: white;
 }
 
 .two {
@@ -109,6 +129,14 @@ h2, h1 {
 .two .picture img {
   display: none;
 }
+.two .circle {
+  background-color: white;
+}
+.two .circle i {
+  position: relative;
+  bottom: 25px;
+  color: #532818;
+}
 
 .three {
   background-image: url(/img/fozzie/domestic_fozzie.png);
@@ -118,11 +146,19 @@ h2, h1 {
   width: 30%;
   min-width: 300px;
   color: #532818;
-  top: 150px;
-  left: 100px;
+  top: 100px;
+  left: 50px;
 }
 .three .picture img {
   display: none;
+}
+.three .circle {
+  background-color: #532818;
+}
+.three .circle i {
+  position: relative;
+  bottom: 25px;
+  color: white;
 }
 
 .four {
@@ -136,6 +172,14 @@ h2, h1 {
 }
 .four .picture img {
   display: none;
+}
+.four .circle {
+  background-color: white;
+}
+.four .circle i {
+  position: relative;
+  bottom: 25px;
+  color: #532818;
 }
 
 .five {
@@ -167,17 +211,17 @@ h2, h1 {
   vertical-align: top;
   width: 30%;
   height: 50px;
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
   font-size: 20px;
   color: white;
   text-align: center;
-  background: #e74c3c;
+  background: #00bd2f;
   border: 0;
   border-radius: 5px 5px;
-  border-bottom: 2px solid #db4334;
+  border-bottom: 2px solid #00CC33;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   section {
     height: 76%;
   }
