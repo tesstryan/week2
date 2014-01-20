@@ -217,7 +217,7 @@ h2, h1 {
             position: relative;
             display: inline-block;
             max-width: 500px;
-            width: 100%;
+            // width: 100%;
             min-width: 100px;
             height: 400px;
         }
@@ -244,11 +244,12 @@ h2, h1 {
             left: 0;
             background-color: white;
             text-align: left;
-            padding: 10px;
+            padding: 20px;
+            padding-top: 50px;
             width: 100%;
             border-radius: 0px 0px;
             h2, h1 {
-                font-size: 22px;
+                font-size: 40px;
                 text-align: center;
             }
             p, .submit {
@@ -257,13 +258,26 @@ h2, h1 {
         }
     }
 
+        .one .picture img {
+            width: 100%;
+        }
+
+         .three .picture img {
+            width: 100%;
+        }
+
         .two .text {
             color: black;
+            margin-top: -50px;
+        }
+
+        .three .text {
+            margin-top: -65px;
         }
 
         .four .text {
             color: black;
-            margin-top: 15px;
+            margin-top: 5px;
         }
         .four {
             max-height: 485px;
@@ -272,8 +286,14 @@ h2, h1 {
             max-height: 485px;
         }
 
-    }
-
+        .five {
+            .picture { 
+                img {
+                display: none;
+                }
+            }
+}
+}
 
 
 

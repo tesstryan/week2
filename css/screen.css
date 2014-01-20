@@ -238,7 +238,6 @@ h2, h1 {
     position: relative;
     display: inline-block;
     max-width: 500px;
-    width: 100%;
     min-width: 100px;
     height: 400px;
   }
@@ -265,25 +264,39 @@ h2, h1 {
     left: 0;
     background-color: white;
     text-align: left;
-    padding: 10px;
+    padding: 20px;
+    padding-top: 50px;
     width: 100%;
     border-radius: 0px 0px;
   }
   .one .form h2, .one .form h1, .two .form h2, .two .form h1, .three .form h2, .three .form h1, .four .form h2, .four .form h1, .five .form h2, .five .form h1 {
-    font-size: 22px;
+    font-size: 40px;
     text-align: center;
   }
   .one .form p, .one .form .submit, .two .form p, .two .form .submit, .three .form p, .three .form .submit, .four .form p, .four .form .submit, .five .form p, .five .form .submit {
     font-size: 14px;
   }
 
+  .one .picture img {
+    width: 100%;
+  }
+
+  .three .picture img {
+    width: 100%;
+  }
+
   .two .text {
     color: black;
+    margin-top: -50px;
+  }
+
+  .three .text {
+    margin-top: -65px;
   }
 
   .four .text {
     color: black;
-    margin-top: 15px;
+    margin-top: 5px;
   }
 
   .four {
@@ -292,5 +305,9 @@ h2, h1 {
 
   .three {
     max-height: 485px;
+  }
+
+  .five .picture img {
+    display: none;
   }
 }
