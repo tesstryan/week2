@@ -165,6 +165,9 @@ h2, h1 {
 .five {
     background-image:url(/img/fozzie/muppets-last.jpg);
     position: relative;
+    .picture img {
+        display: none;
+        }
     .form {
         background-color: rgba(white, .9);
         position: absolute;
@@ -178,6 +181,7 @@ h2, h1 {
             width: 75%;
             line-height: 10px;
         }
+
         .name {
             border-radius: 5px 5px;
             height: 25px;
@@ -205,15 +209,20 @@ h2, h1 {
     section {
         height: 76%;
     }
-    .one, .two, .three, .four {
+    .one, .two, .three, .four, .five {
         background: none;
-
+        margin: 0 auto;
+        width: 100%;
         .picture img {
             position: relative;
             display: inline-block;
-            max-width: 600px;
+            max-width: 500px;
+            width: 100%;
             min-width: 100px;
             height: 400px;
+        }
+        .circle {
+            display: none;
         }
         .text {
             position: relative;
@@ -229,7 +238,24 @@ h2, h1 {
                 font-size: 14px;
             }
         }
+        .form {
+            position: relative;
+            top: 0;
+            left: 0;
+            background-color: white;
+            text-align: left;
+            padding: 10px;
+            width: 100%;
+            border-radius: 0px 0px;
+            h2, h1 {
+                font-size: 22px;
+                text-align: center;
+            }
+            p, .submit {
+                font-size: 14px;
+            }
         }
+    }
 
         .two .text {
             color: black;
