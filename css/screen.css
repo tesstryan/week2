@@ -168,7 +168,7 @@ h2, h1 {
   width: 40%;
   color: white;
   top: 10px;
-  right: 10px;
+  left: 5px;
 }
 .four .picture img {
   display: none;
@@ -224,7 +224,157 @@ h2, h1 {
   border-bottom: 2px solid #00CC33;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 501px) and (max-width: 1049px) {
+  section {
+    background-size: cover;
+    height: 100%;
+    position: relative;
+  }
+
+  .one .text, .two .text, .three .text, .four .text {
+    padding: 20px 20px;
+    position: absolute;
+  }
+
+  h2, h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .one {
+    background-image: url(/img/fozzie/Fozzie-pose.png);
+  }
+  .one .text {
+    width: 28%;
+    min-width: 250px;
+    color: #b75162;
+    top: 20px;
+    left: 15px;
+  }
+  .one .picture img {
+    display: none;
+  }
+  .one .circle {
+    background-color: #b75162;
+  }
+  .one .circle i {
+    position: relative;
+    bottom: 25px;
+    color: white;
+  }
+
+  .two {
+    background-image: url(/img/fozzie/musical_fozzie.jpg);
+    background-position: center;
+  }
+  .two .text {
+    width: 40%;
+    min-width: 300px;
+    color: white;
+    top: 60px;
+    right: 5px;
+  }
+  .two .picture img {
+    display: none;
+  }
+  .two .circle {
+    background-color: white;
+  }
+  .two .circle i {
+    position: relative;
+    bottom: 25px;
+    color: black;
+  }
+
+  .three {
+    background-image: url(/img/fozzie/domestic_fozzie.png);
+    background-position: center center;
+  }
+  .three .text {
+    width: 30%;
+    min-width: 00px;
+    color: #532818;
+    top: 0px;
+    left: 20px;
+  }
+  .three .picture img {
+    display: none;
+  }
+  .three .circle {
+    background-color: #532818;
+  }
+  .three .circle i {
+    position: relative;
+    bottom: 25px;
+    color: white;
+  }
+
+  .four {
+    background-image: url(/img/fozzie/fozzie_friends.jpg);
+    background-position: center;
+  }
+  .four .text {
+    width: 70%;
+    color: white;
+    top: 30px;
+    left: 30px;
+  }
+  .four .picture img {
+    display: none;
+  }
+  .four .circle {
+    background-color: white;
+  }
+  .four .circle i {
+    position: relative;
+    bottom: 26px;
+    color: #b75162;
+  }
+
+  .five {
+    background-image: url(/img/fozzie/muppets-last.jpg);
+    position: relative;
+  }
+  .five .picture img {
+    display: none;
+  }
+  .five .form {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 10%;
+    left: 15%;
+    right: 15%;
+    padding: 30px;
+    border-radius: 10px 10px;
+  }
+  .five .form .text {
+    width: 75%;
+    line-height: 10px;
+  }
+  .five .form .name {
+    border-radius: 5px 5px;
+    height: 25px;
+    box-shadow: none;
+    width: 200px;
+  }
+  .five .form .submit {
+    position: relative;
+    vertical-align: top;
+    width: 30%;
+    height: 50px;
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background: #00bd2f;
+    border: 0;
+    border-radius: 5px 5px;
+    border-bottom: 2px solid #00CC33;
+  }
+}
+@media only screen and (max-width: 500px) {
   section {
     height: 76%;
   }
@@ -264,7 +414,6 @@ h2, h1 {
     left: 0;
     background-color: white;
     text-align: left;
-    padding: 20px;
     padding-top: 50px;
     width: 100%;
     border-radius: 0px 0px;
@@ -287,7 +436,7 @@ h2, h1 {
 
   .two .text {
     color: black;
-    margin-top: -50px;
+    margin-top: -60px;
   }
 
   .three .text {
