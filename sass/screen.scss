@@ -105,7 +105,7 @@ h2, h1 {
          i {
             position: relative;
             bottom: 25px;
-            color: rgba(83, 40, 24, 1);
+            color: black;
             }
         }
 }
@@ -155,8 +155,8 @@ h2, h1 {
         background-color: white;
          i {
             position: relative;
-            bottom: 25px;
-            color: rgba(83, 40, 24, 1);
+            bottom: 26px;
+            color: rgba(183, 81, 98, 1);
             }
         }
 
@@ -204,6 +204,7 @@ h2, h1 {
                 }
         }
 }
+
 
 @include respond-to(handheld) {
     section {
@@ -277,7 +278,7 @@ h2, h1 {
 
         .four .text {
             color: black;
-            margin-top: 5px;
+            margin-top: 15px;
         }
         .four {
             max-height: 485px;

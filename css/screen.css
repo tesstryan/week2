@@ -135,7 +135,7 @@ h2, h1 {
 .two .circle i {
   position: relative;
   bottom: 25px;
-  color: #532818;
+  color: black;
 }
 
 .three {
@@ -178,8 +178,8 @@ h2, h1 {
 }
 .four .circle i {
   position: relative;
-  bottom: 25px;
-  color: #532818;
+  bottom: 26px;
+  color: #b75162;
 }
 
 .five {
@@ -296,7 +296,7 @@ h2, h1 {
 
   .four .text {
     color: black;
-    margin-top: 5px;
+    margin-top: 15px;
   }
 
   .four {
