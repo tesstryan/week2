@@ -4,7 +4,7 @@
     background-size: $size;
 }
 
-$break-small: 500px;
+$break-small: 550px;
 $break-large: 1050px;
 
 @mixin respond-to($media) {
