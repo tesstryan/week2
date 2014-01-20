@@ -224,7 +224,7 @@ h2, h1 {
   border-bottom: 2px solid #00CC33;
 }
 
-@media only screen and (min-width: 551px) and (max-width: 1049px) {
+@media only screen and (min-width: 456px) and (max-width: 1049px) {
   section {
     background-size: cover;
     height: 100%;
@@ -374,7 +374,7 @@ h2, h1 {
     border-bottom: 2px solid #00CC33;
   }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 455px) {
   section {
     height: 76%;
   }
