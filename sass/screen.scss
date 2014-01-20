@@ -105,7 +105,7 @@ h2, h1 {
          i {
             position: relative;
             bottom: 25px;
-            color: rgba(83, 40, 24, 1);
+            color: black;
             }
         }
 }
@@ -144,7 +144,7 @@ h2, h1 {
         width: 40%;
         color: white;
         top: 10px;
-        right: 10px;
+        left: 5px;
     }
     .picture img {
         display: none;
@@ -155,8 +155,8 @@ h2, h1 {
         background-color: white;
          i {
             position: relative;
-            bottom: 25px;
-            color: rgba(83, 40, 24, 1);
+            bottom: 26px;
+            color: rgba(183, 81, 98, 1);
             }
         }
 
@@ -165,6 +165,9 @@ h2, h1 {
 .five {
     background-image:url(/img/fozzie/muppets-last.jpg);
     position: relative;
+    .picture img {
+        display: none;
+        }
     .form {
         background-color: rgba(white, .9);
         position: absolute;
@@ -178,6 +181,7 @@ h2, h1 {
             width: 75%;
             line-height: 10px;
         }
+
         .name {
             border-radius: 5px 5px;
             height: 25px;
@@ -201,19 +205,194 @@ h2, h1 {
         }
 }
 
+@include respond-to(tablet) {
+section {
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+%text {
+    padding: 20px 20px;
+    position: absolute;
+}
+
+h2, h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.one {
+    background-image:url(/img/fozzie/Fozzie-pose.png);
+
+
+    .text {
+        @extend %text;
+        width: 28%;
+        min-width: 250px;
+        color: rgba(183, 81, 98, 1);
+        top: 20px;
+        left: 15px;
+    }
+    .picture img {
+        display: none;
+    }
+    .circle {
+        @extend %circle;
+        background-color: rgba(183, 81, 98, 1);
+         i {
+            position: relative;
+            bottom: 25px;
+            color: white;
+            }
+    }
+}
+
+.two {
+    background-image:url(/img/fozzie/musical_fozzie.jpg);
+    background-position:center; 
+
+    .text {
+        @extend %text;
+        width: 40%;
+        min-width: 300px;
+        color: white;
+        top: 60px;
+        right: 5px;
+    }
+    .picture img {
+        display: none;
+    }
+    .circle {
+        @extend %circle;
+        background-color: white;
+         i {
+            position: relative;
+            bottom: 25px;
+            color: black;
+            }
+        }
+}
+
+.three {
+    background-image:url(/img/fozzie/domestic_fozzie.png);
+    background-position: center center;
+
+    .text {
+        @extend %text;
+        width: 30%;
+        min-width: 00px;
+        color: rgba(83, 40, 24, 1);
+        top: 0px;
+        left: 20px;
+    }
+    .picture img {
+        display: none;
+    }
+    .circle {
+        @extend %circle;
+        background-color: rgba(83, 40, 24, 1);
+         i {
+            position: relative;
+            bottom: 25px;
+            color: white;
+            }
+        }
+}
+
+.four {
+    background-image:url(/img/fozzie/fozzie_friends.jpg);
+    background-position:center; 
+
+    .text {
+        @extend %text;
+        width: 70%;
+        color: white;
+        top: 30px;
+        left: 30px;
+    }
+    .picture img {
+        display: none;
+    }
+
+    .circle {
+        @extend %circle;
+        background-color: white;
+         i {
+            position: relative;
+            bottom: 26px;
+            color: rgba(183, 81, 98, 1);
+            }
+        }
+
+}
+
+.five {
+    background-image:url(/img/fozzie/muppets-last.jpg);
+    position: relative;
+    .picture img {
+        display: none;
+        }
+    .form {
+        background-color: rgba(white, .9);
+        position: absolute;
+        display: inline-block;
+        content: "";
+        top: 10%;
+        left: 15%;
+        right: 15%;
+        padding: 30px;
+        border-radius: 10px 10px;
+        .text {
+            width: 75%;
+            line-height: 10px;
+        }
+
+        .name {
+            border-radius: 5px 5px;
+            height: 25px;
+            box-shadow: none;
+            width: 200px;
+        }
+        .submit {
+             position: relative;
+             vertical-align: top;
+             width: 30%;
+             height: 50px;
+             margin: 20px 0 0 0;
+             font-size: 20px;
+             color: white;
+             text-align: center;
+             background: darken(#00CC33, 3%);
+             border: 0;
+             border-radius: 5px 5px;
+             border-bottom: 2px solid #00CC33;
+                }
+        }
+}
+    
+}
+
+
+
 @include respond-to(handheld) {
     section {
         height: 76%;
     }
-    .one, .two, .three, .four {
+    .one, .two, .three, .four, .five {
         background: none;
-
+        margin: 0 auto;
+        width: 100%;
         .picture img {
             position: relative;
             display: inline-block;
-            max-width: 600px;
+            max-width: 500px;
+            // width: 100%;
             min-width: 100px;
             height: 400px;
+        }
+        .circle {
+            display: none;
         }
         .text {
             position: relative;
@@ -229,10 +408,40 @@ h2, h1 {
                 font-size: 14px;
             }
         }
+        .form {
+            position: relative;
+            top: 0;
+            left: 0;
+            background-color: white;
+            text-align: left;
+            padding-top: 50px;
+            width: 100%;
+            border-radius: 0px 0px;
+            h2, h1 {
+                font-size: 40px;
+                text-align: center;
+            }
+            p, .submit {
+                font-size: 14px;
+            }
+        }
+    }
+
+        .one .picture img {
+            width: 100%;
+        }
+
+         .three .picture img {
+            width: 100%;
         }
 
         .two .text {
             color: black;
+            margin-top: -60px;
+        }
+
+        .three .text {
+            margin-top: -65px;
         }
 
         .four .text {
@@ -246,8 +455,14 @@ h2, h1 {
             max-height: 485px;
         }
 
-    }
-
+        .five {
+            .picture { 
+                img {
+                display: none;
+                }
+            }
+}
+}
 
 
 
