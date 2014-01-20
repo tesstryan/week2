@@ -250,7 +250,7 @@ h2, h1 {
 
 .two {
     background-image:url(/img/fozzie/musical_fozzie.jpg);
-    background-position:center; 
+    background-position:center;
 
     .text {
         @extend %text;
@@ -302,7 +302,7 @@ h2, h1 {
 
 .four {
     background-image:url(/img/fozzie/fozzie_friends.jpg);
-    background-position:center; 
+    background-position:center;
 
     .text {
         @extend %text;
@@ -370,7 +370,7 @@ h2, h1 {
                 }
         }
 }
-    
+
 }
 
 
@@ -437,16 +437,20 @@ h2, h1 {
 
         .two .text {
             color: black;
-            margin-top: -60px;
         }
 
         .three .text {
-            margin-top: -65px;
         }
 
         .four .text {
             color: black;
             margin-top: 15px;
+        }
+        .one {
+            max-height: 530px;
+        }
+        .two {
+            max-height: 540px;
         }
         .four {
             max-height: 485px;
@@ -456,13 +460,11 @@ h2, h1 {
         }
 
         .five {
-            .picture { 
+            max-height: 485px;
+            .picture {
                 img {
                 display: none;
                 }
             }
 }
 }
-
-
-
