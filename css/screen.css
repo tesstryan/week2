@@ -420,19 +420,11 @@ h2, h1 {
     border-radius: 0px 0px;
   }
   .one .form h2, .one .form h1, .two .form h2, .two .form h1, .three .form h2, .three .form h1, .four .form h2, .four .form h1, .five .form h2, .five .form h1 {
-    font-size: 40px;
+    font-size: 22px;
     text-align: center;
   }
   .one .form p, .one .form .submit, .two .form p, .two .form .submit, .three .form p, .three .form .submit, .four .form p, .four .form .submit, .five .form p, .five .form .submit {
     font-size: 14px;
-  }
-
-  .one .picture img {
-    width: 100%;
-  }
-
-  .three .picture img {
-    width: 100%;
   }
 
   .two .text {
@@ -441,7 +433,6 @@ h2, h1 {
 
   .four .text {
     color: black;
-    margin-top: 15px;
   }
 
   .one {
@@ -449,15 +440,15 @@ h2, h1 {
   }
 
   .two {
-    max-height: 540px;
+    max-height: 530px;
   }
 
   .four {
-    max-height: 485px;
+    max-height: 500px;
   }
 
   .three {
-    max-height: 485px;
+    max-height: 500px;
   }
 
   .five {

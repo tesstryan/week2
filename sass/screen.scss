@@ -418,7 +418,7 @@ h2, h1 {
             width: 100%;
             border-radius: 0px 0px;
             h2, h1 {
-                font-size: 40px;
+                font-size: 22px;
                 text-align: center;
             }
             p, .submit {
@@ -427,36 +427,25 @@ h2, h1 {
         }
     }
 
-        .one .picture img {
-            width: 100%;
-        }
-
-         .three .picture img {
-            width: 100%;
-        }
 
         .two .text {
             color: black;
         }
 
-        .three .text {
-        }
-
         .four .text {
             color: black;
-            margin-top: 15px;
         }
         .one {
             max-height: 530px;
         }
         .two {
-            max-height: 540px;
+            max-height: 530px;
         }
         .four {
-            max-height: 485px;
+            max-height: 500px;
         }
         .three {
-            max-height: 485px;
+            max-height: 500px;
         }
 
         .five {
